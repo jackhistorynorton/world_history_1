@@ -1,0 +1,1257 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headerlink {
+  font: normal 400 16px fontawesome-mini;
+  vertical-align: middle;
+  margin-left: -16px;
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  color: #333;
+}
+
+.markdown-body .headerlink:focus {
+  outline: none;
+}
+
+.markdown-body h1 .headerlink {
+  margin-top: 0.8rem;
+}
+
+.markdown-body h2 .headerlink,
+.markdown-body h3 .headerlink {
+  margin-top: 0.6rem;
+}
+
+.markdown-body h4 .headerlink {
+  margin-top: 0.2rem;
+}
+
+.markdown-body h5 .headerlink,
+.markdown-body h6 .headerlink {
+  margin-top: 0;
+}
+
+.markdown-body .headerlink:hover,
+.markdown-body h1:hover .headerlink,
+.markdown-body h2:hover .headerlink,
+.markdown-body h3:hover .headerlink,
+.markdown-body h4:hover .headerlink,
+.markdown-body h5:hover .headerlink,
+.markdown-body h6:hover .headerlink {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px fontawesome-mini;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\e157';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><style>/*github*/
+.codehilite {background-color:#fff;color:#333333;}
+.codehilite .hll {background-color:#ffffcc;}
+.codehilite .c{color:#999988;font-style:italic}
+.codehilite .err{color:#a61717;background-color:#e3d2d2}
+.codehilite .k{font-weight:bold}
+.codehilite .o{font-weight:bold}
+.codehilite .cm{color:#999988;font-style:italic}
+.codehilite .cp{color:#999999;font-weight:bold}
+.codehilite .c1{color:#999988;font-style:italic}
+.codehilite .cs{color:#999999;font-weight:bold;font-style:italic}
+.codehilite .gd{color:#000000;background-color:#ffdddd}
+.codehilite .ge{font-style:italic}
+.codehilite .gr{color:#aa0000}
+.codehilite .gh{color:#999999}
+.codehilite .gi{color:#000000;background-color:#ddffdd}
+.codehilite .go{color:#888888}
+.codehilite .gp{color:#555555}
+.codehilite .gs{font-weight:bold}
+.codehilite .gu{color:#800080;font-weight:bold}
+.codehilite .gt{color:#aa0000}
+.codehilite .kc{font-weight:bold}
+.codehilite .kd{font-weight:bold}
+.codehilite .kn{font-weight:bold}
+.codehilite .kp{font-weight:bold}
+.codehilite .kr{font-weight:bold}
+.codehilite .kt{color:#445588;font-weight:bold}
+.codehilite .m{color:#009999}
+.codehilite .s{color:#dd1144}
+.codehilite .n{color:#333333}
+.codehilite .na{color:teal}
+.codehilite .nb{color:#0086b3}
+.codehilite .nc{color:#445588;font-weight:bold}
+.codehilite .no{color:teal}
+.codehilite .ni{color:purple}
+.codehilite .ne{color:#990000;font-weight:bold}
+.codehilite .nf{color:#990000;font-weight:bold}
+.codehilite .nn{color:#555555}
+.codehilite .nt{color:navy}
+.codehilite .nv{color:teal}
+.codehilite .ow{font-weight:bold}
+.codehilite .w{color:#bbbbbb}
+.codehilite .mf{color:#009999}
+.codehilite .mh{color:#009999}
+.codehilite .mi{color:#009999}
+.codehilite .mo{color:#009999}
+.codehilite .sb{color:#dd1144}
+.codehilite .sc{color:#dd1144}
+.codehilite .sd{color:#dd1144}
+.codehilite .s2{color:#dd1144}
+.codehilite .se{color:#dd1144}
+.codehilite .sh{color:#dd1144}
+.codehilite .si{color:#dd1144}
+.codehilite .sx{color:#dd1144}
+.codehilite .sr{color:#009926}
+.codehilite .s1{color:#dd1144}
+.codehilite .ss{color:#990073}
+.codehilite .bp{color:#999999}
+.codehilite .vc{color:teal}
+.codehilite .vg{color:teal}
+.codehilite .vi{color:teal}
+.codehilite .il{color:#009999}
+.codehilite .gc{color:#999;background-color:#EAF2F5}
+</style><title>Schedule-1101-FA18</title></head><body><article class="markdown-body"><p><strong><a href="http://jacknorton.org/courses/world-history-1101-spring-2017/syllabus-1101-spring-2017/">Syllabus</a> – <a href="http://jacknorton.org/?page_id=595&amp;preview=true">Assignments</a> – <a href="http://jacknorton.org/courses/world-history-1101-spring-2017/schedule-1101-spring-2017/">Schedule</a>– <a href="https://normandale.ims.mnscu.edu/index.asp">Brightspace (D2L)</a> - <a href="http://jacknorton.org/courses/world-history-1101-spring-2017/">Home</a></strong>  </p>
+<h2 id="schedule-world-history-1101-fall-2018">Schedule: World History 1101, Fall 2018<a class="headerlink" href="#schedule-world-history-1101-fall-2018" title="Permanent link"></a></h2>
+<p><strong>Week 1, August 27-31: History Bootcamp I</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <em><a href="http://jacknorton.org/courses/world-history-1101-spring-2017/read-this-first-1101-spring-2017/">Read this first</a></em>
+<strong>Quiz</strong> Read the Readings for Week 2(History Bootcamp II) and take the quiz on D2L by <strong>Sunday night at 8 p.m.</strong></p>
+<ul>
+<li>
+<p><a href="http://teachinghistory.org/historical-thinking-intro">Video intro to historical thinking</a> </p>
+</li>
+<li>
+<p><a href="http://www.collectionscanada.gc.ca/education/008-3010-e.html">Intro to primary vs. secondary sources</a> </p>
+</li>
+<li>
+<p><a href="http://www.lib.usm.edu/legacy/plag/plagiarismtutorial.php">Plagiarism tutorial</a></p>
+</li>
+</ul>
+<p><strong>Do</strong>: Read the Read this first document, read the syllabus, take the syllabus quiz on <a href="https://normandale.ims.mnscu.edu/index.asp">D2L</a> and tell me a bit about yourself in the get-to-know-your <a href="https://goo.gl/forms/aRQuvzddn7KmoRw22">form</a>
+<strong>Do</strong> Introduce yourself on our discussion boards in D2L. </p>
+<p><strong>Week 2, September 3-7: History Bootcamp II</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <em>You will need your Star ID to log in to our Library Databases for these readings.</em> </p>
+<ul>
+<li>
+<p>&ldquo;Homo Sapiens Migrate from Africa.&rdquo; <em>Global Events: Milestone Events Throughout History.</em> Ed. Jennifer Stock. Vol. 1: Africa. Farmington Hills, MI: Gale, 2014. 7-10. Gale Virtual Reference Library. Web. 18 Aug. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000013&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=9d610cc938f62e227d9d4bbcfd1232ab">Link</a></p>
+</li>
+<li>
+<p>&ldquo;Aborigines Arrives in Australia.&rdquo; <em>Global Events: Milestone Events Throughout History.</em> Ed. Jennifer Stock. Vol. 2: Asia and Oceania. Farmington Hills, MI: Gale, 2014. 6-8. Gale Virtual Reference Library. Web. 18 Aug. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000177&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=8b654a31a0a1e35b555c5fb91612211dd">Link</a></p>
+</li>
+<li>
+<p>&ldquo;The First Settlers Arrive in South America.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 3: Central and South America. Farmington Hills, MI: Gale, 2014. 7-9. Gale Virtual Reference Library. Web. 18 Aug. 2015.
+<a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000340&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=4773a5a8f07026e80f5f4a380c8c4e9a">Link</a></p>
+</li>
+<li>
+<p>&ldquo;Agriculture Develops in the Fertile Crescent.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 5: Middle East. Farmington Hills, MI: Gale, 2014. 7-10. Gale Virtual Reference Library. Web. 23 Aug. 2015.
+<a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000666&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=9715114e20ac87964e9ac1e638748a81">Link</a></p>
+</li>
+<li>
+<p>&ldquo;The Second Wave of Bering Strait Migration Begins.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 6: North America. Farmington Hills, MI: Gale, 2014. 9-12. Gale Virtual Reference Library. Web. 23 Aug. 2015.
+<a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000839&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=7b349ed05dd37c74382f3054ae782648">Link</a></p>
+</li>
+<li>
+<p>&ldquo;The City of Caral Is Built.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 3: Central and South America. Farmington Hills, MI: Gale, 2014. 10-12. Gale Virtual Reference Library. Web. 23 Aug. 2015.
+<a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000341&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=90b684cbd17e722a559ce5c3ace244d6">Link</a></p>
+</li>
+<li>
+<p>Leftwich, Brent. &ldquo;Prehistoric Europe: Overview.&rdquo; Daily Life through History. ABC-CLIO, 2015. Web. 23 Aug. 2015.
+<a href="http://dailylife2.abc-clio.com.ndcproxy.mnpals.net/Topics/Display/1945301?cid=41&amp;sid=1945301&amp;useConcept=False">Link</a>
+<strong>Do</strong>: <a href="http://commonmark.org/help/tutorial/">Markdown Tutorial</a>
+<a href="http://jacknorton.org/courses/world-history-1101-fall-2016/assignments-1101-fall-2016/history-bootcamp-ii-assignment/">History Bootcamp II Assignment</a>
+<strong>Quiz</strong>: Time I Readings (Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 2 Discussion Posts</p>
+</li>
+</ul>
+<p><strong>Week 3, January 22-27, Time I</strong>  </p>
+<p><strong>Read, View, or Play</strong>: * &ldquo;Harappa Emerges as Major Indus Valley City.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 2: Asia and Oceania. Farmington Hills, MI: Gale, 2014. 13-16. Gale Virtual Reference Library. Web. 1 Sept. 2015.<a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000180&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=dc19c498eaca3a1957145b20283a525e">Link</a></p>
+<ul>
+<li>
+<p>&ldquo;The New King<strong>Do</strong>m Begins in Egypt.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 1: Africa. Farmington Hills, MI: Gale, 2014. 18-22. Gale Virtual Reference Library. Web. 1 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000017&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=877b1ff9e2a199fb0c9fc77aa946bae6">Link</a> </p>
+</li>
+<li>
+<p>&ldquo;Sargon the Great Founds the Akkadian Empire.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 5: Middle East. Farmington Hills, MI: Gale, 2014. 25-27. Gale Virtual Reference Library. Web. 1 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000673&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=83a0c2f35f17173649cd61ffa0c49f11">Link</a></p>
+</li>
+<li>
+<p>&ldquo;Aspasia of Miletus (c. 464 BCEñc. 420 BCE).&rdquo; Dictionary of Women Worldwide: 25,000 Women Through the Ages. Ed. Anne Commire and Deborah Klezmer. Vol. 1. Detroit: Yorkin Publications, 2007. 92. Gale Virtual Reference Library. Web. 1 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX2588801188&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=29ae3ec878316ca0afa6cd2715276b6d">Link</a></p>
+</li>
+<li>
+<p>&ldquo;Aryans Compose the Vedas.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 2: Asia and Oceania. Farmington Hills, MI: Gale, 2014. 33-35. Gale Virtual Reference Library. Web. 1 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000188&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=3b189c90dc2a48db749f7b886f23fb9f">Link</a></p>
+</li>
+<li><strong>Do</strong>:<a href="http://jacknorton.org/wp-content/uploads/2017/01/Time_I_-Lesson_PlanSP17.html">Time I Assignment</a>
+Complete the <a href="http://commonmark.org/help/tutorial/">Markdown Tutorial</a>
+<strong>Quiz</strong>: Time II Readings(Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 3 Discussion Posts</li>
+</ul>
+<p>**Week 4, January 30 - February 3, Time II###</p>
+<p><strong>Read, View, or Play</strong>: * &ldquo;Hammurabi Establishes a Legal Code.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 5: Middle East. Farmington Hills, MI: Gale, 2014. 38-40. Gale Virtual Reference Library. Web. 1 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000678&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=8720db12dfbc77b2beecd943a9723818">Link</a></p>
+<ul>
+<li>
+<p>&ldquo;Zoroastrianism Is Founded in Persia.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 5: Middle East. Farmington Hills, MI: Gale, 2014. 58-61. Gale Virtual Reference Library. Web. 1 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000686&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=1f665dc2174af46613ddb62eecb737b1">Link</a></p>
+</li>
+<li>
+<p><a href="http://avalon.law.yale.edu/ancient/hamframe.asp">Code of Hammurabi</a> Laws 25, 108, 129, 130, &amp; 132</p>
+</li>
+<li>
+<p><a href="https://youtu.be/HS2IHBOt4G0">Sita Sings the Blues: Clip from full-length movie</a> </p>
+</li>
+</ul>
+<p>The entire movie is a cartoon that intertwines the story of Rama and Sita with the story of the artist who made the movie, who experienced a similar treatment by her man.  The score is a 1920s American jazz singer.  As you&rsquo;ll read and see, Rama is a god, Sita his human wife who is kidnapped by another god, and then rescued by Rama, his brother, and their friend the Monkey King. I&rsquo;ve included other links if you&rsquo;re interested in exploring more about the movie.</p>
+<p>Once you&rsquo;ve had a chance to digest the clip of Sita Sings the Blues consider how he movie was created.  The director, Nina Paley, set the myth of the Ramayana to Jazz singer Annette Harshaw 1920&rsquo;s music, with modern day Indians telling the story.  As an additional layer, Paley interweaves her story of heartbreak into the film.  To say this is a complex mix of history and pop culture would be an understatement.  </p>
+<p><em>For your information</em>
+<a href="http://www.sitasingstheblues.com/watch.html">Sita Sings the Blues (full movie)</a>
+<a href="http://www.nytimes.com/2009/02/15/movies/15roch.html?_r=0"> Movie Review of Sita Sings the Blues</a>
+<a href="http://www.bl.uk/onlinegallery/whatson/exhibitions/ramayana/guide.html">&ldquo;Quick guide to the Ramayana&rdquo;</a> From our friends at the British Library</p>
+<p><strong>Do</strong> <a href="http://jacknorton.org/wp-content/uploads/2017/01/Time_II_-Lesson_Plan.html">Time II Assignment</a>
+<strong>Quiz</strong>: Images I Readings (Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 4 Discussion Posts</p>
+<p><strong>Week 5, Feburary 5 - 10, Images I</strong>  </p>
+<p><strong>Read, View, or Play</strong>: * Loy, Pamela S. &ldquo;Lysistrata.&rdquo; World Literature and Its Times: Profiles of Notable Literary Works and the Historical Events That Influenced Them. Joyce Moss. Vol. 8: Classical Literature and Its Times. Detroit: Gale, 2006. 209-217. Gale Virtual Reference Library. Web. 14 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX2876000031&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=a55a914b526f47ef23510ec423c7a0ef">Link</a></p>
+<ul>
+<li>
+<p>&ldquo;Chandragupta Founds the Mauryan Empire.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 2: Asia and Oceania. Farmington Hills, MI: Gale, 2014. 50-53. Gale Virtual Reference Library. Web. 14 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000195&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=4ac8992eb9ce67d3a702545e3a53c01c">Link</a></p>
+</li>
+<li>
+<p>Sacks, David. &ldquo;Alexander the Great.&rdquo; Encyclopedia of the Ancient Greek World, Third Edition. New York: Facts On File, 2015. Accessed September 14, 2015. 
+<a href="http://online.infobase.com.ndcproxy.mnpals.net/Auth/Index?aid=100853&amp;itemid=WE49&amp;articleId=224479">Link</a></p>
+</li>
+</ul>
+<p>I O&rsquo;Neal, Michael J. &ldquo;Art in Ancient Greece.&rdquo; Encyclopedia of Society and Culture in the Ancient World. New York: Facts On File, 2007. Accessed September 14, 2015. <a href="http://online.infobase.com.ndcproxy.mnpals.net/Auth/Index?aid=100853&amp;itemid=WE49&amp;articleId=226725">Link</a></p>
+<ul>
+<li>Brown, Robert. &ldquo;Guptan Period Art.&rdquo; Encyclopedia of India. Ed. Stanley Wolpert. Vol. 2. Detroit: Charles Scribner&rsquo;s Sons, 2006. 164-167. Gale Virtual Reference Library. Web. 14 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3446500257&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=afe79fe82134190c97237e0b65880e05">Link</a></li>
+</ul>
+<p><strong>Do</strong>: <a href="http://jacknorton.org/wp-content/uploads/2016/09/images_assignment_1_1101.html">Images I Assignment</a>
+<strong>Quiz</strong>: Images II Readings (Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 5 Discussion Posts</p>
+<p><strong>Week 6, February 12-17, Images II</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <a href="http://www.metmuseum.org/search-results#!/search?q=mauryan">Met Museum Mauryan Collection</a> Open at least ten images and note their commonalities and differences.</p>
+<p>Selection from <a href="http://jacknorton.org/courses/world-history-1101-fall-2016/assignments-1101-fall-2016/lysistrata-reading/">Lysistrata</a></p>
+<p><a href="http://www.metmuseum.org/toah/hd/haht/hd_haht.htm">Hellenistic Art</a> Read introductory text on web page and view slide show, reading captions on images. </p>
+<p><a href="http://www.metmuseum.org/toah/hd/afrg/hd_afrg.htm">Africans in Ancient Greek Art</a> Read introductory text on web page and view slide show, reading captions on images. </p>
+<p><strong>Do</strong>: <a href="http://jacknorton.org/wp-content/uploads/2017/02/Images_2_assignment.html">Images II Assignment</a>
+<strong>Quiz</strong>: Maps I Readings(Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 6 Discussion Posts</p>
+<p><strong>Week 7, February 19-24, Maps Week I</strong>  </p>
+<p><strong>Read, View, or Play</strong>: &ldquo;Geography&rdquo; <em>World Eras.</em> Ed. John T. Kirby. Vol. 3: Roman Republic and Empire, 264 B.C.E.- 476 C.E. Detroit: Gale, 2001. 396-398. Gale Virtual Reference Library. Web. 14 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3034800233&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=f23a8e1cee5dde99f5c041e0f8c243f1">Link</a></p>
+<p>&ldquo;Augustus Becomes the First Roman Emperor.&rdquo; <em>Global Events: Milestone Events Throughout History.</em> Ed. Jennifer Stock. Vol. 4: Europe. Farmington Hills, MI: Gale, 2014. 40-43. Gale Virtual Reference Library. Web. 14 Sept. 2015.<a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000515&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=2ab5235c8fd3931536bb99be91d30e99">Link</a></p>
+<p>&ldquo;The Han Dynasty Is Established.&rdquo; <em>Global Events: Milestone Events Throughout History</em>. Ed. Jennifer Stock. Vol. 2: Asia and Oceania. Farmington Hills, MI: Gale, 2014. 62-65. Gale Virtual Reference Library. Web. 14 Sept. 2015.<a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000199&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=cb6fb28ddada21cb5998fdd054a15ef3">Link</a> </p>
+<p><a href="https://www.dropbox.com/s/7qsa5idaj3noz2t/GISIntro1101_NoARCGIS.pdf?dl=0">Introduction to GIS</a> Click on link to Download pdf. </p>
+<p>&ldquo;Cleopatra VII Commits Suicide.&rdquo; Global Events: Milestone Events Throughout History. Ed. Jennifer Stock. Vol. 1: Africa. Farmington Hills, MI: Gale, 2014. 49-53. Gale Virtual Reference Library. Web. 29 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX3728000027&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=4128e239ca8ca3fd12a3cc09d595072e">Link</a> </p>
+<p>&ldquo;The Mound Builders: Poverty Point, Adena, Hopewell, and Mississippian Cultures.&rdquo; UXL Encyclopedia of Native American Tribes. Ed. Laurie J. Edwards. 3rd ed. Vol. 1: Northeast, Subartic. Detroit: UXL, 2012. 165-181. Gale Virtual Reference Library. Web. 29 Sept. 2015. <a href="http://go.galegroup.com.ndcproxy.mnpals.net/ps/i.do?id=GALE%7CCX4019400021&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=f5d882546cd60ddbe7cd977efd323936">Link</a></p>
+<p><strong>Do</strong>: <a href="http://jacknorton.org/wp-content/uploads/2017/02/maps-lesson-i.html">Maps I Assignment</a>
+<strong>Quiz</strong>: Maps II Readings(Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 7 Discussion Posts</p>
+<p><strong>Week 8, February 26 - March 3, Maps II</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <a href="http://digitalaugustanrome.org/">Digital Augustan Rome: Read Mapping Augustan Rome, An Introduction &amp; #247 on map &ldquo;Circus Maximus&rdquo;</a></p>
+<p><a href="http://orbis.stanford.edu/">Orbis Atlas of the Roman World: Read &ldquo;Home,&rdquo; &ldquo;Introduction,&rdquo; and &ldquo;Understanding&rdquo; sections.</a> </p>
+<p><a href="https://www.youtube.com/watch?v=VAgA6G75XsI">&ldquo;A Tour through Ancient Rome in 320 C.E.&rdquo;</a></p>
+<p><strong>Do</strong>: <a href="http://jacknorton.org/wp-content/uploads/2016/10/maps2lesson.html">Maps II Assignment</a>
+Face-to-Face class: <a href="http://mnpals.normandale.edu/F/3G19YR5CIV6QN21FM942CKKYYNCCEF3A2BMDRXHFH26EQ6R8IM-21835?func=full-set-set&amp;set_number=293799&amp;set_entry=000020&amp;format=999">Video</a> Roman archeology we watched in class. 
+<strong>Quiz</strong>: Words I Readings(Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 8 Discussion Posts</p>
+<p><strong>Spring Break </strong></p>
+<p><strong>Week 9, March 12 - 17, Words I</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <a href="http://ndcproxy.mnpals.net/login?url=http://dailylife2.abc-clio.com/Search/Display/1426455?terms=popol+vuh">Mayan Creation Myths</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://go.galegroup.com/ps/i.do?id=GALE%7CCX3424502751&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=5157d1adffee2a3de56bda903c9f0e6a">An introduction to Sastra Literature</a></p>
+<p><a href="http://voyant-tools.org/">Voyant Tools website</a></p>
+<p><strong>Do</strong>:  <a href="http://jacknorton.org/wp-content/uploads/2016/10/words-lesson-plan-i_2016_10_14.html">Words I Assignment</a>
+<strong>Quiz</strong>: Words 2 Readings (Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 9 Discussion Posts</p>
+<p><strong>Week 10, March 19 - 24, Words 2, Quiz 9</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <a href="http://ndcproxy.mnpals.net/login?url=http://dailylife2.abc-clio.com/Search/Display/1426468?terms=origin+myths">Popul Vuh short reading</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://dailylife2.abc-clio.com/Search/Display/1426453">Creation Myths Background Reading</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://dailylife2.abc-clio.com/Search/Display/1426454">Creation Myths in the Bible</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://dailylife2.abc-clio.com/Search/Display/1426455">Creation Myths in Mayan Society</a></p>
+<p><a href="http://jacknorton.org/wp-content/uploads/2016/08/LawsOfManu.txt">Full text</a> for to use for the assignment on the Law of Manu <strong>*Do not read - we&rsquo;ll use it in Voyant</strong></p>
+<p><strong>Do</strong>:  <a href="http://jacknorton.org/wp-content/uploads/2017/03/words_2_-assignment_1101.html">Words II Assignment</a>
+<strong>Quiz</strong>: Numbers I Readings (Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 10 Discussion Posts</p>
+<p><strong>Week 11, March 26 - 31, Numbers I</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <a href="http://ndcproxy.mnpals.net/login?url=http://go.galegroup.com/ps/i.do?id=GALE|CX3446500196&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=be87b3c7f5e926b99a2cfd511f84b6fc">Early Maritime Contacts in India</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://go.galegroup.com/ps/i.do?id=GALE|CX3403702687&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=4b243f18020a00f89ae1d695dbc647f0">Silk Road</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://go.galegroup.com/ps/i.do?id=GALE|CX3034900084&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=6c5d74b834537b92ff70e0a58528b145">Medieval European Trade</a></p>
+<p><a href="http://historymatters.gmu.edu/mse/numbers/what.html">What is Quantitative History</a></p>
+<p><a href="http://historymatters.gmu.edu/mse/numbers/reading.html">Reading and Organizing Quantitative History</a></p>
+<p><a href="http://jacknorton.org/wp-content/uploads/2016/10/Historical-Statistics-for-the-World-Economy1_1500.xlsx">Historical Statistics for the World Economy, 1-1500C.E</a> For our Numbers 1 Assignment, not on the quiz. </p>
+<p><strong>Do</strong>: <a href="http://jacknorton.org/wp-content/uploads/2016/10/numbers_1_-assignment_1101.html">Numbers I Assignment</a>
+<strong>Quiz</strong>: Numbers II Readings (Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 11 Discussion Posts</p>
+<p><strong>Week 12, April 2 - 7, Numbers II</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <a href="http://ndcproxy.mnpals.net/login?url=http://dailylife2.abc-clio.com/Search/Display/1425925?terms=trade">Trade in the Medieval World </a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://dailylife2.abc-clio.com/Search/Display/1425926?terms=trade">European Trade: Medieval World</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://dailylife2.abc-clio.com/Search/Display/1425929?terms=trade">Islamic World Trade: Medieval World</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://dailylife2.abc-clio.com/Search/Display/1425030?terms=trade">Coins and Monetary Exchange in the Byzantine Empire: Medieval World</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://dailylife2.abc-clio.com/Search/Display/1425928?terms=trade">Chinese Trade: Medieval World</a></p>
+<p><strong>Do</strong>: <a href="http://jacknorton.org/numbers_2_assignment_1101-2/">Numbers 2 Assignment</a> 
+<a href="http://jacknorton.org/wp-content/uploads/2016/11/SelectCapitaGDP1_1500.xlsx">Select Per Capita GDP World History Excel File</a>
+<strong>Quiz</strong>: Conversations I Readings (Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 12 Discussion Posts</p>
+<p><strong>Week 13, April 9-14, Conversations I</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <a href="http://ndcproxy.mnpals.net/login?url=http://go.galegroup.com/ps/i.do?id=GALE%7CCX3049000418&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=b984ce6eaef110727b169c373d06c629">Background on Mansa Musa</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://go.galegroup.com/ps/i.do?id=GALE%7CCX3623301440&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=8408c1edcec08d3a15afd3086702fa2a">Background on the Plague</a></p>
+<p><a href="http://ndcproxy.mnpals.net/login?url=http://go.galegroup.com/ps/i.do?id=GALE%7CCX3035200117&amp;v=2.1&amp;u=mnanorman&amp;it=r&amp;p=GVRL&amp;sw=w&amp;asid=4e703def4d041c4723bb8eb7893d45c9">Background on the Mongols</a> </p>
+<p>Also, see <em>Conversations I assignment</em> for additional instructions. You will find social media writings on Mansa Musa, the Mongols, and the Black Death. Both these background readings and your knowledge of twitter, pinterest, and wordpress will be tested in this week&rsquo;s quiz.  </p>
+<p><strong>Do</strong>: <a href="http://jacknorton.org/conversations-1-assignment-1101/">Conversations 1 Assignment</a>
+<strong>Quiz</strong>: Conversations I Readings (Open Thursday at noon until Sunday at 8 p.m.)
+<strong>Do</strong>: Week 13 Discussion Posts</p>
+<p><strong>Week 14, April 16-21 Conversations II</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <a href="http://er.educause.edu/articles/2013/12/social-media-as-a-primary-source-a-coming-of-age">&ldquo;Social Media as a Primary Source: A Coming of Age&rdquo;</a></p>
+<p><a href="https://ballandalus.wordpress.com">Ballandus</a>: read the latest two posts. </p>
+<p><strong>Do</strong>: <a href="http://jacknorton.org/wp-content/uploads/2016/11/conversations_2_assignment_1101.html">Conversations 2 Assignment</a>
+<strong>Quiz</strong>: None
+<strong>Do</strong>: Week 14 Discussion Posts</p>
+<p><strong>Week 15, April 23 - 28, Final Exhibit I</strong>  </p>
+<p><strong>Read, View, or Play</strong>: <a href="http://amandafrench.net/2013/11/12/introduction-to-omeka-lesson-plan/">Introduction to Omeka</a>
+<strong>Do</strong>:  <a href="http://jacknorton.org/wp-content/uploads/2017/04/exhibit_assignments_1_2_final_SP17.html">Exhibits 1 Assignment</a>
+<strong>Quiz</strong>: None
+<strong>Do</strong>: Week 15  Discussion Posts</p>
+<p>**Week 16, April 30 - May 5th</p>
+<p><strong>Read, View, or Play</strong>: 
+<strong>Do</strong>: <a href="http://jacknorton.org/courses/world-history-1101-spring-2017/assignments-1101-spring-2017/exhibit-assignment-2-peer-review/">Exhibits 2 Assignment: Peer Review (html)</a>
+<a href="http://jacknorton.org/exhibits_assignment_2_review_1101_sp17/">Exhibits 2 Assignment: Peer Review (txt file)</a>
+<strong>Do</strong>: Week 16 Discussion Posts</p>
+<p>**Week 17 (Finals), May 7-12</p></article></body></html>
