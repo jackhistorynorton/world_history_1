@@ -1,13 +1,12 @@
-### [Syllabus] – [Assignments] – [Schedule]– [Brightspace (D2L)] - [Home] ###
+#### [Syllabus] – [Assignments] – [Schedule]– [Brightspace (D2L)] - [Home] ####
 
-  [Syllabus]: http://jacknorton.org/courses/world-history-1101-fall-2018/syllabus-1101-fall-2018/
-  [Assignments]: http://jacknorton.org/courses/world-history-1101-fall-2018/assignments-1101-fall-2018/
-  [Schedule]: http://jacknorton.org/courses/world-history-1101-fall-2018/schedule-1101-fall-2018/
+  [Syllabus]: 
+  [Assignments]: 
+  [Schedule]: 
   [Brightspace (D2L)]: https://normandale.learn.minnstate.edu/
-  [Home]: http://jacknorton.org/courses/world-history-1101-fall-2018/
-
-# History 1101: World History from Prehistory to 1400 with Jack Norton #
-## Syllabus ##
+  [Home]: 
+## History 1101: World History from Prehistory to 1400 with Jack Norton ##
+### Syllabus ###
 
 _“You can best serve civilization by being against what usually passes for it.”_ Wendell Berry
 
@@ -28,7 +27,6 @@ I want you to learn about the past, learn new skills about how to analyze and pr
 *   Communicate effectively using historical evidence and methods.
 
 *   Analyze and understand the diversity of peoples within their distinctive historical contexts.  
-
 
 *   Develop strategies for advancing your learning skills, such as effective reading, writing, acquiring new digital skills and critically analyzing historical sources.
     
@@ -96,9 +94,6 @@ For online only, you need to be able to:
 -  Recognize that written communication requires more careful word choice than oral communication. For example, sarcastic comments don’t work because you can’t read sarcasm, only hear it. 
 
 If you need technology help, you may call our IT help desk at 952-358-8181.  Even better, ask them a question on Normandale's “[*Ask Us*](http://normandale.custhelp.com/app/home)” page, which will help track your request.  
-
-**Basic Needs Statement** 
-If you have difficulty affording groceries or  
 
 **Late Work-** Assignments are due by the 8 p.m. on Friday for the week of the assignment listed in the course calendar. Assignments handed in late are penalized 15 points. Late work may be handed in until the D2L Assignment Submission Folder for late work closes, the penultimate week of class. *Quizzes, in-class responses, and discussions may not be made up.* Your lowest two quiz grades, discussion grades or in-class response grades are automatically dropped. 
 
@@ -187,7 +182,6 @@ Hunger Solutions has an interactive map with locations of free dining sites, foo
 * _Foodpantry.org_ | https://www.foodpantries.org/ 
     
 This website can also be a helpful tool to search for food pantries by city.  
- 
 
 ### Why are grades on D2L but most of the course material are on jacknorton.org? ###
 
