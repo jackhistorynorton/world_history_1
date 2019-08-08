@@ -1,12 +1,12 @@
-# Conversations II Lesson Plan 
+## Conversations II Lesson Plan 
 
-**Due on Friday at 8 p.m. **
+**Due on Thursday at 8 p.m. **
 
 **Question this lesson seeks to answer: **How can we write about history for the general public in ways that are both accurate and interesting? 
 
 **Learning objectives. By the end of this lesson, students will be able to:**
 
-1. Locate a credible news story, pinterest pin, tweet or wordpress post about a contemporary (2018) issue about an **issue** related directly to the Mongols, the black death, the Renaissance, or Mansa Musa. 
+1. Locate a credible news story, pinterest pin, tweet or wordpress post about a contemporary (2010 or later) issue about an **issue** related directly to the Mongols, the black death, the Renaissance, or Mansa Musa. 
 
 2. Locate a credible *primary source* that explains the importance of the **issue** that you've identified. 
 
@@ -16,9 +16,7 @@
 
 5. Write and post a blog entry on what issue you've identified and why it matters to a modern Minnesotan. 
 
-## Conversations II Assignment
-
-## How to sign up for Word Press. 
+### How to sign up for Word Press. 
 
 1. Check your Normandale email. 
 
@@ -32,9 +30,9 @@
 
 ![How to sign up for Word Press. ][1]
 
-[1]: images/conversations-2-1101/how-to-sign-up-for-word-press-.png
+[1]: images/conversations-2-1101/how-to-sign-up-for-word-press-.png "Image of Wordpress website"
 
-## Write and tag your post. 
+### Write and tag your post. 
 
 Your post should be fewer than 500 words, including all quotations and citations for any images.
 
@@ -57,9 +55,9 @@ Please tag your post (tagging is adding a keyword) on the left hand side. Please
 
 ![Write and tag your post. ][2]
 
-[2]: images/conversations-2-1101/write-and-tag-your-post-.png
+[2]: images/conversations-2-1101/write-and-tag-your-post-.png "Image of Wordpress website"
 
-## Publish your post. 
+### Publish your post. 
 
 Once you've written, edited, titled, and tagged your post, click on "Publish" to add your post to the blog. 
 
@@ -67,21 +65,21 @@ Note: I use this blog for multiple classes, you'll see blog entries on industria
 
 ![Publish your post. ][3]
 
-[3]: images/conversations-2-1101/publish-your-post-.png
+[3]: images/conversations-2-1101/publish-your-post-.png "Image of Wordpress website"
 
-## Time to complete
+### Time to complete
 
 I expect it should take you about an hour to find two sources that work well together, another hour to figure out how to write an interesting post, and two hours to write, edit, and publish your post. 
 
-## Don't miss!
+### Don't miss!
 
 This is as close to traditional history paper as you get in this class. 500 words is about two pages, which is not easy to write well. Give yourself time. When students have succeeded on this assignment in the past is when they broke it into chunks and worked and though about it over an entire week. Students that dumped a couple of hastily found sources into a rambling "this is what I think about things on the internet" have struggled to earn decent grades. 
 
-## Grading Criteria
+### Grading Criteria
 
 Student: 
 
-1. Located a credible news story, pinterest pin, tweet or wordpress post about a contemporary (2018) issue about an **issue** related directly to the Mongols, the black death, the Renaissance, or Mansa Musa. 
+1. Located a credible news story, pinterest pin, tweet or wordpress post about a contemporary (2019) issue about an **issue** related directly to the Mongols, the black death, the Renaissance, or Mansa Musa. 
 
 2. Located a credible *primary source* that explains the importance of the **issue** that you've identified. 
 
